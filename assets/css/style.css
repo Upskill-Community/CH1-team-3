@@ -1,0 +1,43 @@
+/* 
+Font
+*/
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/* 
+    Primary 
+    */
+	--Dark-Blue: hsl(233, 26%, 24%);
+	--Lime-Green: hsl(136, 65%, 51%);
+	--Bright-Cyan: hsl(192, 70%, 51%);
+
+	/* 
+    Neutral 
+    */
+	--Grayish-Blue: hsl(233, 8%, 62%);
+	--Light-Grayish-Blue: hsl(220, 16%, 96%);
+	--Very-Light-Gray: hsl(0, 0%, 98%);
+	--White: hsl(0, 0%, 100%);
+	--gradient: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+	--hover-gradient: linear-gradient(to right, hsl(136, 65%, 51%, 0.6), hsl(192, 70%, 51%, 0.6));
+}
+
+body {
+	font-size: 18px;
+	font-family: "Public Sans", sans-serif;
+}
+
+.container {
+	max-width: 1440px;
+	margin: auto;
+	padding-block: 3em;
+	padding-inline: 2em;
+}
