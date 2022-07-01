@@ -1,6 +1,6 @@
-# UpSkill Internship Group 3 - Easybank landing page solution
+# CH1-team-3
 
-This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN).
+A team of 6 interns worked to develop and provide solution to the Easybank landing page
 
 ## Welcome! 👋
 
@@ -21,11 +21,11 @@ Thanks for checking out our Project.
 
 This is a development of the Easybank landing page as Final Project for the Upskill Internship Programme.
 
-A team of 6 interns worked on this using HTML, CSS ad JavaScript in completing the Project
+6 contributors worked on this project using HTML, CSS ad JavaScript in developing solutions.
 
 ### The challenge
 
-The challenge is to build out this landing page and get it looking as close to the design as possible.
+The challenge is to build out this landing page and get it looking as close as possible to the design in the screenshot below.
 
 Users should be able to:
 
@@ -80,4 +80,4 @@ const proudOfThisFunc = () => {
 
 ## Acknowledgments
 
-A special thanks to the co-ordinators of the Upskill internship Programme
+A special thanks to the co-ordinators of the Upskill internship Programme, the mentors, teachers, and fellow interns for the experience and knowledge
