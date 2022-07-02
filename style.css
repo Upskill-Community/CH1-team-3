@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+  }
+
+  :root {
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --gradient: linear-gradient( to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  }
+
+
+  footer {
+    background: var(--Dark-Blue);
+    width: 100%;
+    color: var(--White);
+    padding: 30px 200px;
+    /* display: flex; */
+    font-size: 18px;
+    font-family: "public sans", sans-serif;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    min-width: 375px;
+    max-width: 1440px;
+  }
+
+footer .footer .container {
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+}
+
+footer .footer .container .col-left {
+    position: relative;
+    color: var(--White);
+    /* text-transform: uppercase; */
+}
+
+footer .footer .container .col-left .footer-title {
+    position: relative;
+    margin-bottom: 60px;
+    /* color: #fff; */
+}
+
+footer .footer .container .col-left .footer-title img {
+    height: 15px;
+    width: 30px;
+}
+
+footer .footer .container .col-left .media-icons a {
+    color: var(--White);
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+footer .footer .container .col-left .media-icons a:hover {
+    color: hsl(136, 65%, 51%);
+    /* background-color: hsl(136, 65%, 51%); */
+    transition: 1s ease;
+}
+
+footer .footer .container .details {
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer .container .details .left {
+    margin-right: 60px;
+}
+
+footer .footer .container .details .right {
+    position: relative;
+}
+
+
+footer .footer .container .details ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+footer .footer .container .details ul li:hover {
+    color: var(--Lime-Green);
+    transition: 1s ease;
+}
+
+footer .footer .container .col-right {
+    position: relative;
+}
+
+footer .footer .container .col-right .btn {
+    color: var(--White);
+    background: var(--gradient);
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 10px 20px;
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 100px;
+    margin-bottom: 50px;
+}
+
+footer .footer .container .col-right .btn:hover {
+    background: var(--gradient);
+    transition: 1s ease;
+}
+
+
+
+footer .footer .container .col-right .copyright {
+    position: relative;
+    color: rgba(250, 250, 250, 0.562);
+    font-size: 0.8em;
+}
+
+@media (max-width: 700px) {
+    footer {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        /* text-align: center; */
+}
+}
+
+@media (max-width: 700px) {
+    footer .footer .container {
+        justify-content: center;
+        align-items: center;
+        display: block;
+        text-align: center;
+}
+}
+/* footer title */
+@media (max-width: 700px) {
+    footer .footer .container .col-left .footer-title {
+        margin-bottom: 30px;
+    }
+}
+/* media icons */
+@media (max-width: 700px) {
+    footer .footer .container .col-left .media-icons a {
+        font-size: 25px;
+    }
+}
+/* details */
+@media (max-width: 700px) {
+    footer .footer .container .details {
+        display: block;
+        margin-top: 40px;
+    }
+}
+/* details left  */
+@media (max-width: 700px) {
+    footer .footer .container .details .left {
+        margin-right: 0;
+    }
+}
+
+/* details ul li */
+@media (max-width: 700px) {
+    footer .footer .container .details ul li {
+        margin-bottom: 12px;
+        align-items: center;
+    }
+}
+/* btn */
+@media (max-width: 700px) {
+    footer .footer .container .col-right .btn {
+        margin-top: 28px;
+        margin-bottom: 0px ;
+}
+}
+/* copyright */
+@media (max-width: 700px) {
+    footer .footer .container .col-right .copyright {
+        margin-top: 30px;
+}
+}
