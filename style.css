@@ -1,277 +1,421 @@
-* {
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
-  }
+/* 
+Font
+*/
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
 
-  :root {
-    --Dark-Blue: hsl(233, 26%, 24%);
-    --Lime-Green: hsl(136, 65%, 51%);
-    --Bright-Cyan: hsl(192, 70%, 51%);
-    --Grayish-Blue: hsl(233, 8%, 62%);
-    --Light-Grayish-Blue: hsl(220, 16%, 96%);
-    --Very-Light-Gray: hsl(0, 0%, 98%);
-    --White: hsl(0, 0%, 100%);
-    --gradient: linear-gradient( to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-  }
-  /****** CHILOTA SECTION ************/
-  
-  /**************** body *****************/
-.body {
-    font-size: 20px;
-    font-family: "Public Sans", sans-serif;
-    overflow-x: scroll;
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-/***** Latest Article **************/
-.latest-article {
-    margin-top:10px ;
-    color: var(--Light-Grayish-Blue);
+:root {
+	/* 
+    Primary 
+    */
+	--Dark-Blue: hsl(233, 26%, 24%);
+	--Lime-Green: hsl(136, 65%, 51%);
+	--Bright-Cyan: hsl(192, 70%, 51%);
+
+	/* 
+    Neutral 
+    */
+	--Grayish-Blue: hsl(233, 8%, 62%);
+	--Light-Grayish-Blue: hsl(220, 16%, 96%);
+	--Very-Light-Gray: hsl(0, 0%, 98%);
+	--White: hsl(0, 0%, 100%);
+	--gradient: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+	--hover-gradient: linear-gradient(to right, hsl(136, 65%, 51%, 0.6), hsl(192, 70%, 51%, 0.6));
 }
-/********** h3 *****************/
-.latest-article .container h3 {
-    font-size: 2em;
-    font-weight: 40;
-    margin-bottom: 20px;
-    color: var(--Dark-Blue);
-    text-align: center;
-    margin-inline: 1em;
+
+body {
+	font-size: 18px;
+	font-family: "Public Sans", sans-serif;
 }
-/****** Card Section ***************/
-.card-section {
-    margin-top: 2.5em;
-    display: grid;
-    gap: 25px;
-    margin: auto;
-    justify-content: center;
-    }
-/****** Individual cards *********/
-.individual-card {
-    background-color: var(--White);
-    border-radius: 12px;
-    max-width: 400px;
+
+.container {
+	max-width: 1440px;
+	margin: auto;
+	padding-block: 3em;
+	padding-inline: 2em;
 }
-/********* Images ***************/
-.individual-card img {
-    width: 100%;
-    height: 256px;
-    border-top-left-radius: 11px;
-    border-top-right-radius: 11px;
-    object-fit: cover;
+a {
+	text-decoration: none;
 }
-/******* Individual Card Details ******/
-.individual-card-details {
-/*  margin: 12px 12px;*/
-    padding: 1em;
+
+/*
+NEXT GENERATION DIGITAL BANKING SECTION
+*/
+.section1{
+  position: relative;
+  background-color: var(--Very-Light-Gray);
+  height: 33em;
+  display: flex;
+  align-items: center;
 }
-.individual-card-details .name {
-    color: var(--Dark-Blue);
-    font-size: 1em;
-    margin-bottom: 10px;
-    font-style: italic;
+
+.section1-content{
+  width: 460px;
+font-weight: 400;
+color: var(--Dark-Blue);
+padding-left: 5%;
 }
-/********** h4 ********************/
-.individual-card-details h4 {
-    margin-bottom: 10px;
-    color: var(--Dark-Blue);
-    font-weight: 400;
-    font-size: 1.1em;
-}
-/********* quotes *****************/
-.individual-card-details .quote {
-    color: var(--Grayish-Blue);
-    font-size: 1em;
-    font-weight: 300;
-    line-height: 1.3em;
-    padding-bottom: 2em;
-}
-/********* @media ***********/
-@media (min-width: 800px) {
-/************ h3 ******************/
-.latest-article .container h3 {
+.section1-content h1{
+	font-size: 2.5em;
+	font-weight: 400;
+	color: var(--Dark-Blue);
+	margin-bottom: 1.5rem;
+	margin-inline: 1em;
     text-align: left;
-    margin-inline: 0;
 }
-/********** Quote Section  ************/
-    .individual-card-details .quote {
-    padding-bottom: 0;
+
+.section11 {
+    font-size: 2.5em;
+	font-weight: 400;
+	color: var(--Dark-Blue);
+    text-align: left;
+    margin-bottom: 1rem
+}
+
+.section1-content p{
+  margin: rem 0 5rem ;
+}
+
+.section1-content2 {
+    text-align: left;
+	line-height: 1.2em;
+	color: var(--Grayish-Blue);
+    text-align: left;
+    width: 2000px;
+}
+
+.section1-image1 {
+    position: flex;
+    padding: -18%; 
+    height: 71em;
+    width: 15px;
     }
-}
-/********* @media Card Section ************/
-@media (min-width: 1000px)    {
-.card-section {
-        grid-template-columns: repeat(4,1fr);
+
+.section1-image2 {
+    position: flex;
+    padding: 17%;
 }
 
+section
+.request-button {
+    padding: 15px 40px;
+	background-image: var(--gradient);
+	border: 0;
+	border-radius: 30px;
+	margin-block: 1.5rem;
+	color: var(--White);
+}
+/*
+NEXT GENERATION DIGITAL BANKING SECTION ENDS HERE
+*/
+
+/* 
+WHY CHOOSE EASYBANK SECTION 
+*/
+.easybank-section {
+	background-color: var(--Light-Grayish-Blue);
 }
 
-  footer {
-    background: var(--Dark-Blue);
-    width: 100%;
-    color: var(--White);
-    padding: 30px 200px;
-    /* display: flex; */
-    font-size: 18px;
-    font-family: "public sans", sans-serif;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .container {
-    min-width: 375px;
-    max-width: 1440px;
-  }
-
-footer .footer .container {
-    display: flex;
-    justify-content: space-between;
-    /* text-align: center; */
+.easybank-section-header {
+	text-align: center;
 }
 
-footer .footer .container .col-left {
-    position: relative;
-    color: var(--White);
-    /* text-transform: uppercase; */
+.easybank-section-head {
+	font-size: 2.5em;
+	font-weight: 400;
+	color: var(--Dark-Blue);
+	margin-bottom: 1.5rem;
+	margin-inline: 1em;
 }
 
-footer .footer .container .col-left .footer-title {
-    position: relative;
-    margin-bottom: 60px;
-    /* color: #fff; */
+.easybank-section-p {
+	color: var(--Grayish-Blue);
+	line-height: 1.5em;
 }
 
-footer .footer .container .col-left .footer-title img {
-    height: 15px;
-    width: 30px;
+/* 
+EASYBANK CARD SECTION 
+*/
+.easybank-card-section {
+	margin-top: 3em;
+	display: grid;
+	gap: 2em;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
 }
 
-footer .footer .container .col-left .media-icons a {
-    color: var(--White);
-    font-size: 16px;
-    margin-right: 8px;
+.easybank-section-card {
+	max-width: 400px;
 }
 
-footer .footer .container .col-left .media-icons a:hover {
-    color: hsl(136, 65%, 51%);
-    /* background-color: hsl(136, 65%, 51%); */
-    transition: 1s ease;
+.easybank-section-card h4 {
+	font-size: 1.5em;
+	font-weight: normal;
+	color: var(--Dark-Blue);
+	margin-block: 1em;
 }
 
-footer .footer .container .details {
-    display: flex;
-    justify-content: center;
+.easybank-section-card p {
+	text-align: center;
+	line-height: 1.5em;
+	color: var(--Grayish-Blue);
+}
+/*
+EASYBANK CARD SECTION ENDS 
+*/
+@media (min-width: 800px) {
+	.easybank-section-header {
+		text-align: left;
+	}
+
+	.easybank-section-head {
+		margin-inline: 0;
+	}
+
+	.easybank-section-p {
+		max-width: 700px;
+	}
+
+	.easybank-card-section {
+		grid-template-columns: repeat(2, 1fr);
+		text-align: left;
+		justify-content: left;
+		align-items: left;
+	}
+
+	.easybank-section-card p {
+		text-align: left;
+	}
 }
 
-footer .footer .container .details .left {
-    margin-right: 60px;
+@media (min-width: 1100px) {
+	.easybank-card-section {
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
 
-footer .footer .container .details .right {
-    position: relative;
+/* 
+WHY CHOOSE EASYBANK SECTION ENDS HERE 
+*/
+
+/* 
+LATEST ARTICLE SECTION 
+*/
+.latest-article {
+	background-color: var(--Very-Light-Gray);
 }
 
-
-footer .footer .container .details ul li {
-    list-style: none;
-    margin-bottom: 20px;
+.latest-article .container h3 {
+	font-size: 2.5em;
+	font-weight: 400;
+	color: var(--Dark-Blue);
+	margin-bottom: 1.5rem;
+	margin-inline: 1em;
+	text-align: center;
 }
 
-footer .footer .container .details ul li:hover {
-    color: var(--Lime-Green);
-    transition: 1s ease;
+/* 
+LATEST ARTICLE CARD SECTION 
+*/
+
+.latest-article-card-section {
+	margin-top: 3em;
+	display: grid;
+	gap: 2em;
+	margin: auto;
+	justify-content: center;
 }
 
-footer .footer .container .col-right {
-    position: relative;
+.latest-article-card {
+	background-color: var(--White);
+	border-radius: 10px;
+	max-width: 412px;
 }
 
-footer .footer .container .col-right .btn {
-    color: var(--White);
-    background: var(--gradient);
-    font-size: 12px;
-    font-weight: 700;
-    display: inline-block;
-    padding: 10px 20px;
-    /* text-transform: uppercase; */
-    text-decoration: none;
-    letter-spacing: 1px;
-    border-radius: 100px;
-    margin-bottom: 50px;
+.latest-article-card-section img {
+	width: 100%;
+	height: 255px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	object-fit: cover;
 }
 
-footer .footer .container .col-right .btn:hover {
-    background: var(--gradient);
-    transition: 1s ease;
+.latest-article-card-detail {
+	padding: 1.5em;
 }
 
-
-
-footer .footer .container .col-right .copyright {
-    position: relative;
-    color: rgba(250, 250, 250, 0.562);
-    font-size: 0.8em;
+.latest-article-card-detail .name {
+	color: var(--Grayish-Blue);
+	font-size: 0.7em;
+	margin-bottom: 1.3em;
 }
 
-@media (max-width: 700px) {
-    footer {
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        /* text-align: center; */
-}
+.latest-article-card-detail h4 {
+	color: var(--Dark-Blue);
+	font-size: 1.2em;
+	font-weight: 500;
+	margin-bottom: 0.5em;
 }
 
-@media (max-width: 700px) {
-    footer .footer .container {
-        justify-content: center;
-        align-items: center;
-        display: block;
-        text-align: center;
-}
-}
-/* footer title */
-@media (max-width: 700px) {
-    footer .footer .container .col-left .footer-title {
-        margin-bottom: 30px;
-    }
-}
-/* media icons */
-@media (max-width: 700px) {
-    footer .footer .container .col-left .media-icons a {
-        font-size: 25px;
-    }
-}
-/* details */
-@media (max-width: 700px) {
-    footer .footer .container .details {
-        display: block;
-        margin-top: 40px;
-    }
-}
-/* details left  */
-@media (max-width: 700px) {
-    footer .footer .container .details .left {
-        margin-right: 0;
-    }
+.latest-article-card-detail h4:hover {
+	color: var(--Lime-Green);
 }
 
-/* details ul li */
-@media (max-width: 700px) {
-    footer .footer .container .details ul li {
-        margin-bottom: 12px;
-        align-items: center;
-    }
+.latest-article-card-detail .quote {
+	color: var(--Grayish-Blue);
+	font-size: 0.9em;
+	line-height: 1.4em;
+	padding-bottom: 2em;
 }
-/* btn */
-@media (max-width: 700px) {
-    footer .footer .container .col-right .btn {
-        margin-top: 28px;
-        margin-bottom: 0px ;
+
+/* 
+LATEST ARTICLE CARD SECTION ENDS
+*/
+@media (min-width: 800px) {
+	.latest-article .container h3 {
+		text-align: left;
+		margin-inline: 0;
+	}
+
+	.latest-article-card-section {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.latest-article-card-detail .quote {
+		padding-bottom: 0;
+	}
 }
+
+@media (min-width: 1100px) {
+	.latest-article-card-section {
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
-/* copyright */
-@media (max-width: 700px) {
-    footer .footer .container .col-right .copyright {
-        margin-top: 30px;
+
+/* 
+LATEST ARTICLE SECTION END
+*/
+
+/* 
+Footer
+*/
+footer {
+	background-color: var(--Dark-Blue);
+	color: var(--White);
+	text-align: center;
 }
+
+.footer-contact {
+	margin-bottom: 2em;
+}
+
+.footer-media-icons {
+	margin-top: 2rem;
+}
+
+.footer-media-icons a i {
+	color: var(--White);
+	font-size: 1.5rem;
+	margin-inline: 8px;
+}
+
+.footer-media-icons :hover {
+	color: var(--Lime-Green);
+}
+
+.footer-details li {
+	list-style: none;
+	margin-block: 1rem;
+}
+
+.footer-details li a {
+	color: var(--Light-Grayish-Blue);
+}
+
+.footer-details li a:hover {
+	color: var(--Lime-Green);
+}
+
+.btn {
+	padding: 15px 40px;
+	background-image: var(--gradient);
+	border: 0;
+	border-radius: 30px;
+	margin-block: 1.5rem;
+}
+
+.btn a {
+	color: var(--White);
+}
+
+.btn:hover {
+	background-image: var(--hover-gradient);
+}
+
+.copyright {
+	color: var(--Grayish-Blue);
+	margin-top: 20px;
+}
+
+@media (min-width: 1000px) {
+	footer .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	footer section {
+		display: flex;
+	}
+
+	.footer-contact {
+		margin-top: 20px;
+		text-align: start;
+	}
+
+	.space-between {
+		width: 100px;
+	}
+
+	.footer-details {
+		display: flex;
+		justify-content: space-between;
+		text-align: left;
+	}
+
+	.footer-about-us {
+		margin-inline: 20px;
+	}
+
+	.footer-career {
+		margin-inline: 20px;
+	}
+
+	.footer-request {
+		margin-left: 30px;
+	}
+}
+/* 
+Footer End
+*/
+
+/*
+Attribution
+*/
+.attribution {
+	margin-top: 3rem;
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
 }
