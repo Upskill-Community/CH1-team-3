@@ -45,6 +45,109 @@ a {
 	text-decoration: none;
 }
 
+						/* Navbar 24/06/22 */
+header {
+   color: var(--Light);
+   background-color: var(white);
+   width: 100%;
+   padding: 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   transition: 0.5s ease;
+   font-family: 'Public Sans', sans-serif;
+}
+
+header .navbar .logo {
+   font-size: 1.5rem;
+   font-weight: bold;
+   float: left;
+   padding: 20px;
+   cursor: pointer;
+}
+
+header .navbar ul {
+   display:flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header .navbar ul li {
+   list-style: none;
+   padding: 10px;
+}
+
+header .navbar ul li a {
+   text-decoration: none;
+   color: var(--Grayish);
+   transition: all 0.3s ease 0s;
+
+}
+
+header .navbar ul li a:hover {
+   color: var(--Grayish);
+}
+button {
+   padding: 3px 25px;
+   background-image: var(--gradient);
+   /* background-color: var() */
+   border: none;
+   border-radius: 50px;
+   cursor: pointer;
+   transition: all 0.3s ease 0s;
+   margin-top: 5px;
+   letter-spacing: 0.5px;
+}
+
+button:hover {
+   background-color: red;
+}
+
+header .nav-toggle {
+   display: none;
+   position: absolute;
+}
+
+header .nav-toggle img {
+   background: #fff;
+   color: #fff;
+}
+
+header .hambuger {
+   /* width: 30px;
+   height: 5px;
+  background-color: blue;  */
+}
+
+@media screen and (max-width: 1440px) {
+      navbar {
+      display: none;
+   }
+}
+@media screen and (max-width: 375px) {
+      nav .navbar {
+       position: absolute;
+      right: 0px;
+      height: 92vh;
+     top: 8vh;
+     background-color: var(white);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 50%;
+   }
+   .nav li{
+      opacity: 0;
+   }
+   .hambuger {
+      display: block;
+      cursor: pointer;
+   }
+}
+
+									/* navbar Ended */
+									
 /*
 NEXT GENERATION DIGITAL BANKING SECTION
 */
