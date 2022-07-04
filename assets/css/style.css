@@ -209,3 +209,18 @@ LATEST ARTICLE CARD SECTION
 /* 
 LATEST ARTICLE CARD SECTION ENDS
 */
+
+@media (min-width: 800px) {
+	.latest-article .container h3 {
+		text-align: left;
+		margin-inline: 0;
+	}
+
+	.latest-article-card-section {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.latest-article-card-detail .quote {
+		padding-bottom: 0;
+	}
+}
