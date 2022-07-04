@@ -224,3 +224,12 @@ LATEST ARTICLE CARD SECTION ENDS
 		padding-bottom: 0;
 	}
 }
+
+@media (min-width: 1100px) {
+	.latest-article-card-section {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+/* 
+LATEST ARTICLE SECTION END
+*/
