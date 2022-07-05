@@ -46,6 +46,139 @@ a {
 	text-decoration: none;
 }
 
+/*
+NAVBAR
+*/
+.navbar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	position: relative;
+	z-index: 1;
+}
+
+.nav-container {
+	width: 90vw;
+	max-width: 1440px;
+}
+
+.nav-header {
+	width: 90vw;
+	margin: 0 auto;
+	height: 15vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-logo {
+	display: flex;
+	align-items: center;
+}
+
+.nav-logo img {
+	width: 150px;
+}
+
+.nav-btn {
+	border: none;
+	background-color: inherit;
+	cursor: pointer;
+}
+
+.nav-btn img {
+	width: 30px;
+}
+
+.nav-list {
+	background-color: var(--White);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 0;
+	overflow: hidden;
+	transition: 0.3s ease;
+}
+
+.nav-link {
+	color: var(--Dark-Blue);
+	padding-block: 10px;
+}
+
+.nav-link:hover {
+	border-bottom: var(--Lime-Green) 2px solid;
+}
+
+.nav-list button {
+	margin-block: 15vh;
+}
+
+.show-links {
+	height: 85vh;
+}
+
+@media (min-width: 900px) {
+	.nav-btn {
+		display: none;
+	}
+
+	.navbar {
+		height: 15vh;
+	}
+
+	.nav-container {
+		display: flex;
+		align-items: center;
+	}
+
+	.nav-header {
+		width: auto;
+		margin-right: 10%;
+	}
+
+	.nav-list {
+		height: auto;
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	.nav-list button {
+		margin-block: 0;
+	}
+
+	.nav-link {
+		padding-block: 20px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.nav-header {
+		margin-right: 15%;
+	}
+
+	.nav-list button {
+		margin-left: 15%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.nav-header {
+		margin-right: 20%;
+	}
+
+	.nav-list button {
+		margin-left: 20%;
+	}
+}
+/*
+NAVBAR END
+*/
+
+
 /* 
 WHY CHOOSE EASYBANK SECTION 
 */
