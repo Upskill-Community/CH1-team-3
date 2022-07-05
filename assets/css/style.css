@@ -366,3 +366,106 @@ LATEST ARTICLE CARD SECTION ENDS
 /* 
 LATEST ARTICLE SECTION END
 */
+
+/* 
+Footer
+*/
+footer {
+	background-color: var(--Dark-Blue);
+	color: var(--White);
+	text-align: center;
+}
+
+.footer-contact {
+	margin-bottom: 2em;
+}
+
+.footer-media-icons {
+	margin-top: 2rem;
+}
+
+.footer-media-icons a i {
+	color: var(--White);
+	font-size: 1.5rem;
+	margin-inline: 8px;
+}
+
+.footer-media-icons :hover {
+	color: var(--Lime-Green);
+}
+
+.footer-details li {
+	list-style: none;
+	margin-block: 1rem;
+}
+
+.footer-details li a {
+	color: var(--Light-Grayish-Blue);
+}
+
+.footer-details li a:hover {
+	color: var(--Lime-Green);
+}
+
+.btn {
+	padding: 15px 40px;
+	background-image: var(--gradient);
+	border: 0;
+	border-radius: 30px;
+	margin-block: 1.5rem;
+}
+
+.btn a {
+	color: var(--White);
+}
+
+.btn:hover {
+	background-image: var(--hover-gradient);
+}
+
+.copyright {
+	color: var(--Grayish-Blue);
+	margin-top: 20px;
+}
+
+@media (min-width: 1000px) {
+	footer .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	footer section {
+		display: flex;
+	}
+
+	.footer-contact {
+		margin-top: 20px;
+		text-align: start;
+	}
+
+	.space-between {
+		width: 100px;
+	}
+
+	.footer-details {
+		display: flex;
+		justify-content: space-between;
+		text-align: left;
+	}
+
+	.footer-about-us {
+		margin-inline: 20px;
+	}
+
+	.footer-career {
+		margin-inline: 20px;
+	}
+
+	.footer-request {
+		margin-left: 30px;
+	}
+}
+/* 
+Footer End
+*/
