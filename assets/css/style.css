@@ -62,11 +62,6 @@ a {
 	background-image: var(--hover-gradient);
 }
 
-.copyright {
-	color: var(--Grayish-Blue);
-	margin-top: 20px;
-}
-
 /*
 NAVBAR
 */
@@ -76,7 +71,7 @@ NAVBAR
 	justify-content: center;
 	align-items: center;
 	background-color: white;
-	position: relative;
+	position: fixed;
 	z-index: 1;
 }
 
@@ -142,10 +137,6 @@ NAVBAR
 }
 
 @media (min-width: 900px) {
-	.navbar {
-		position: fixed;
-	}
-
 	.nav-btn {
 		display: none;
 	}
@@ -209,6 +200,7 @@ HERO SECTION
 */
 .hero-section {
 	background-color: var(--Very-Light-Gray);
+	padding-top: 15vh;
 }
 
 .hero-container {
@@ -262,7 +254,6 @@ HERO SECTION
 		flex-direction: row-reverse;
 		justify-content: space-between;
 		padding-left: 2em;
-		padding-top: 15vh;
 	}
 
 	.hero-image {
@@ -518,6 +509,11 @@ footer {
 
 .footer-details li a:hover {
 	color: var(--Lime-Green);
+}
+
+.copyright {
+	color: var(--Grayish-Blue);
+	margin-top: 20px;
 }
 
 @media (min-width: 1000px) {
