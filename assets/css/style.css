@@ -76,7 +76,7 @@ NAVBAR
 }
 
 .nav-container {
-	width: 90vw;
+	width: 100vw;
 	max-width: 1440px;
 }
 
@@ -146,6 +146,7 @@ NAVBAR
 	}
 
 	.nav-container {
+		padding-inline: 2em;
 		display: flex;
 		align-items: center;
 	}
@@ -274,15 +275,14 @@ HERO SECTION
 
 	.hero-details {
 		text-align: start;
-		padding-inline: 0px;
+		padding-inline: 0 !important;
 		margin: 0;
 	}
 }
 
 @media (min-width: 1500px) {
 	.hero-container {
-		max-width: 1500px;
-		margin: auto;
+		margin: 0 auto;
 	}
 }
 

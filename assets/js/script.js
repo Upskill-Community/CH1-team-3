@@ -8,3 +8,7 @@ navBtnDOM.addEventListener("click", () => {
 links.addEventListener("click", () => {
 	links.classList.remove("show-links");
 });
+
+const date = document.getElementById("date");
+const currentYear = new Date().getFullYear();
+date.innerHTML = currentYear;
