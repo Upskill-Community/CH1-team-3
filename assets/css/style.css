@@ -205,7 +205,7 @@ HERO SECTION
 }
 
 .hero-container {
-	max-width: 1440px;
+	max-width: 1475px;
 	margin-left: auto;
 }
 
@@ -280,8 +280,9 @@ HERO SECTION
 	}
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1600px) {
 	.hero-container {
+		max-width: 1440px;
 		margin: 0 auto;
 	}
 }
